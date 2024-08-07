@@ -29,7 +29,7 @@ logging.getLogger('').addHandler(handler)
 BATCH_SIZE = 750
 SUB_BATCH_SIZE = 150
 MAX_DIMENSION = 360
-DEFAULT_DATE = "10/2020"
+DEFAULT_DATE = os.getenv("DEFAULT_DATE", "08/2024")
 
 # Load environment variables
 IMAGE_DIRECTORY_FOLDER = os.getenv("IMAGE_DIRECTORY_FOLDER")
